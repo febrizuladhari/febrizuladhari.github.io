@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tugas 3 Praktikum Interaksi Manusia dan Komputer</title>
+    <link href="../dist/output.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mx-auto">
+
+        <h3 class="font-semibold my-3">
+            Febri Zuladhari Bangun | 211402126 | Kom C - C2
+        </h3>
+
+        <hr>
+
+        <h1 class="font-bold text-center my-3 mb-20">
+            Component Tailwind CSS pada Laravel
+        </h1>
+
+        <!-- {{-- COMPONENT CARD --}} -->
+        <div class="card">
+            <!-- {{-- COMPONENT BUTTON --}} -->
+            <div class="flex justify-center my-10">
+                <h3 class="font-semibold">Button Component </h3>
+            </div>
+            <div class="flex justify-around">
+
+                <button class="btn btn-primary transition duration-700 ease-in-out">
+                    Primary
+                </button>
+
+                <button class="btn btn-secondary transition duration-700 ease-in-out">
+                    Secondary
+                </button>
+
+                <button class="btn btn-danger transition duration-700 ease-in-out">
+                    Danger
+                </button>
+
+                <button class="btn btn-success transition duration-700 ease-in-out">
+                    Success
+                </button>
+            </div>
+        </div>
+
+
+        <!-- {{-- COMPONENT CARD --}} -->
+        <div class="card my-20">
+            <!-- {{-- COMPONENT ALERT --}} -->
+            <div class="flex justify-center my-10">
+                <h3 class="font-semibold">Alert Component </h3>
+            </div>
+            <div class="mx-10">
+                <div class="alert alert-primary" role="alert">
+                    <span class="font-medium">Primary alert!</span> Ini adalah Primary Alert Tailwind CSS.
+                </div>
+
+                <div class="alert alert-secondary" role="alert">
+                    <span class="font-medium">Secondary alert!</span> Ini adalah Secondary Alert Tailwind CSS.
+                </div>
+
+                <div class="alert alert-danger" role="alert">
+                    <span class="font-medium">Danger alert!</span> Ini adalah Danger Alert Tailwind CSS.
+                </div>
+
+                <div class="alert alert-success" role="alert">
+                    <span class="font-medium">Success alert!</span> Ini adalah Success Alert Tailwind CSS.
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- {{-- COMPONENT CARD --}} -->
+        <div class="card my-20">
+            <!-- {{-- COMPONENT PAGINATION --}} -->
+            <div class="flex justify-center my-10">
+                <h3 class="font-semibold">Pagination Component </h3>
+            </div>
+            <div class="flex justify-center">
+                <nav>
+                    <ul class="pagination">
+                        <li>
+                            <a href="#" class="previous-page">Previous</a>
+                        </li>
+                        <li>
+                            <a href="#" class="item-page">1</a>
+                        </li>
+                        <li>
+                            <a href="#" class="item-page">2</a>
+                        </li>
+                        <li>
+                            <a href="#" aria-current="page" class="active-page">3</a>
+                        </li>
+                        <li>
+                            <a href="#" class="item-page">4</a>
+                        </li>
+                        <li>
+                            <a href="#" class="item-page">5</a>
+                        </li>
+                        <li>
+                            <a href="#" class="next-page">Next</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <!-- {{-- COMPONENT CARD --}} -->
+        <div class="card my-20">
+            <!-- {{-- COMPONENT CHECKBOX & RADIO --}} -->
+            <div class="flex justify-center my-10">
+                <h3 class="font-semibold">Checkbox & Radio Component </h3>
+            </div>
+            <div class="flex justify-around">
+                <!-- {{-- Checbox --}} -->
+                <div class="flex">
+                    <input id="default-checkbox" type="checkbox" value="" class="form-checkbox">
+                    <label for="default-checkbox" class="ml-2 text-sm font-medium">Default checkbox</label>
+                </div>
+
+                <!-- {{-- Radio --}} -->
+                <div class="flex">
+                    <input id="default-radio-1" type="radio" value="" name="default-radio" class="form-radio">
+                    <label for="default-radio-1" class="ml-2 text-sm font-medium">Default radio</label>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    h1 {
+        @apply text-6xl;
+    }
+
+    h3 {
+        @apply text-3xl;
+    }
+}
+
+/* Component Card */
+.card {
+    @apply w-full mx-auto pb-8 bg-white rounded-3xl shadow-xl overflow-hidden;
+}
+
+
+/* Component Button */
+.btn {
+    @apply px-10 py-6 text-center rounded-lg text-3xl font-bold;
+}
+
+.btn-primary {
+    @apply text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-2
+            focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg shadow-blue-500/50 dark:shadow-lg dark:shadow-blue-800/80;
+}
+
+.btn-secondary {
+    @apply text-white bg-gradient-to-r from-cyan-400 via-cyan-500 to-cyan-600 hover:bg-gradient-to-br focus:ring-2
+            focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 shadow-lg shadow-cyan-500/50 dark:shadow-lg dark:shadow-cyan-800/80;
+}
+
+.btn-danger {
+    @apply text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-2
+            focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 shadow-lg shadow-red-500/50 dark:shadow-lg dark:shadow-red-800/80;
+}
+
+.btn-success {
+    @apply text-white bg-gradient-to-r from-green-200 via-green-400 to-green-500 hover:bg-gradient-to-br focus:ring-2
+            focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 shadow-lg shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80;
+}
+
+/* Component Alert */
+.alert {
+    @apply p-4 mb-4 text-xl;
+}
+
+.alert-primary {
+    @apply text-blue-800 rounded-lg bg-blue-50;
+}
+
+.alert-secondary {
+    @apply text-cyan-800 rounded-lg bg-cyan-50;
+}
+
+.alert-danger {
+    @apply text-red-800 rounded-lg bg-red-50;
+}
+
+.alert-success {
+    @apply text-green-800 rounded-lg bg-green-50;
+}
+
+
+/* Component Pagination */
+.pagination {
+    @apply inline-flex -space-x-px;
+}
+
+.item-page {
+    @apply px-3 py-2 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700;
+}
+
+.active-page {
+    @apply px-3 py-2 text-blue-800 border border-gray-300 bg-blue-200 hover:bg-blue-100 hover:text-blue-700;
+}
+
+.previous-page {
+    @apply px-3 py-2 leading-tight text-gray-500 bg-white border border-gray-300 rounded-l-lg hover:bg-gray-100 hover:text-gray-700;
+}
+
+.next-page {
+    @apply px-3 py-2 leading-tight text-gray-500 bg-white border border-gray-300 rounded-r-lg hover:bg-gray-100 hover:text-gray-700;
+}
+
+
+/* Component Checkbox */
+.form-checkbox {
+    @apply w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 focus:ring-2;
+}
+
+
+/* Component Radio */
+.form-radio {
+    @apply w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 focus:ring-2;
+}
