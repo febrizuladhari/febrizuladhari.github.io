@@ -1,0 +1,53 @@
+.chip {
+  border: 3px solid var(--ink);
+  background: var(--paper);
+  font:
+    500 0.8rem "DM Mono",
+    monospace;
+  text-transform: uppercase;
+  padding: 0.4rem 1rem;
+  box-shadow: 3px 3px 0 var(--ink);
+  transition: 0.12s;
+}
+.chip:hover {
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0 var(--ink);
+}
+.chip.on {
+  background: var(--ink);
+  color: var(--paper);
+}
+.stat {
+  font-size: clamp(2.6rem, 6vw, 4rem);
+  font-weight: 800;
+  line-height: 1;
+}
+.blob {
+  background: var(--mint);
+  border: 3px solid var(--ink);
+  padding: 1.2rem 1.5rem;
+  box-shadow: var(--sh);
+}
+.cert .mono {
+  color: var(--accent);
+}
+.more {
+  background: var(--hl);
+}
+.tl-i.grad:before {
+  background: var(--hl);
+}
+.tl-i.now:before {
+  background: var(--mint);
+  animation: tp 1.4s infinite;
+}
+@keyframes tp {
+  50% {
+    transform: scale(1.4);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .tl-i.now:before {
+    animation: none;
+  }
+}

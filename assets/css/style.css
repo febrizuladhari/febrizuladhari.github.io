@@ -43,7 +43,7 @@ h2.sec {
 ::selection {
   background: var(--hl);
 }
-F a {
+a {
   color: inherit;
 }
 .hl {

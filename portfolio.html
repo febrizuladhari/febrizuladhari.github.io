@@ -13,6 +13,7 @@
         rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/portfolio.css" rel="stylesheet">
 </head>
 
 <body>
@@ -36,45 +37,48 @@
     </nav>
     <main>
         <section class="container py-5">
-            <h1 class="big mb-3 rv" style="font-size:clamp(2.8rem,9vw,6rem)" data-i18n="w_h">Work</h1>
-            <p class="mb-5 rv" data-i18n="w_s"></p>
+            <h1 class="big mb-3 rv" style="font-size:clamp(2.8rem,9vw,6rem)" data-i18n="w_h">Selected work</h1>
+            <p class="mb-5 rv" data-m="pf_s"></p>
             <div class="row g-4">
-                <div class="col-md-6 rv">
-                    <div class="card-b hov"><span class="num">01</span>
-                        <h3 class="my-2" data-i18n="w1t"></h3>
-                        <p data-i18n="w1d"></p>
-                        <div class="mb-3"><span class="tagx y">Laravel</span><span class="tagx">MySQL</span></div><a
-                            class="btn-b alt btn-sm" href="https://github.com/USERNAME/REPO" data-i18n="w_c">View
-                            code</a>
-                    </div>
-                </div>
-                <div class="col-md-6 rv">
-                    <div class="card-b hov"><span class="num">02</span>
-                        <h3 class="my-2" data-i18n="w2t"></h3>
-                        <p data-i18n="w2d"></p>
-                        <div class="mb-3"><span class="tagx m">Python</span><span class="tagx m">ML</span></div><a
-                            class="btn-b alt btn-sm" href="https://github.com/USERNAME/REPO" data-i18n="w_c">View
-                            code</a>
-                    </div>
-                </div>
-                <div class="col-md-6 rv">
-                    <div class="card-b hov"><span class="num">03</span>
-                        <h3 class="my-2" data-i18n="w3t"></h3>
-                        <p data-i18n="w3d"></p>
-                        <div class="mb-3"><span class="tagx y">Bootstrap</span><span class="tagx">JavaScript</span>
-                        </div><a class="btn-b alt btn-sm" href="https://github.com/USERNAME/REPO" data-i18n="w_c">View
-                            code</a>
-                    </div>
-                </div>
-                <div class="col-md-6 rv">
-                    <div class="card-b hov"><span class="num">04</span>
-                        <h3 class="my-2" data-i18n="w4t"></h3>
-                        <p data-i18n="w4d"></p>
-                        <div class="mb-3"><span class="tagx m">Python</span><span class="tagx">Data</span></div><a
-                            class="btn-b alt btn-sm" href="https://github.com/USERNAME/REPO" data-i18n="w_c">View
-                            code</a>
-                    </div>
-                </div>
+                <div class="col-lg-6 rv"><a class="proj" href="work-dinsos.html"><span class="sticker"
+                            style="top:-14px;right:18px;z-index:2" data-m="c1g"></span>
+                        <div class="proj-img"><img src="assets/img/dashboard.webp" alt="SIMBA dashboard" loading="lazy">
+                        </div>
+                        <div class="proj-b">
+                            <p class="mono ac mb-0">01</p>
+                            <h3 class="fs-2 mb-0" data-m="c1t"></h3>
+                            <p class="mb-0" data-m="c1d"></p>
+                            <div class="proj-s"><span data-m="c1a"></span><span data-m="c1b"></span><span
+                                    data-m="c1c"></span></div>
+                            <p class="proj-cta mb-0"><span data-m="cta"></span> <span>→</span></p>
+                        </div>
+                    </a></div>
+                <div class="col-lg-6 rv"><a class="proj" href="work-skripsi.html"><span class="sticker"
+                            style="top:-14px;right:18px;z-index:2" data-m="c2g"></span>
+                        <div class="proj-img"><img src="assets/img/skripsi-chat.webp" alt="Bunda Chatbot chat page"
+                                loading="lazy"></div>
+                        <div class="proj-b">
+                            <p class="mono ac mb-0">02</p>
+                            <h3 class="fs-2 mb-0" data-m="c2t"></h3>
+                            <p class="mb-0" data-m="c2d"></p>
+                            <div class="proj-s"><span data-m="c2a"></span><span data-m="c2b"></span><span
+                                    data-m="c2c"></span></div>
+                            <p class="proj-cta mb-0"><span data-m="cta"></span> <span>→</span></p>
+                        </div>
+                    </a></div>
+                <div class="col-12 rv"><a class="proj soon" href="coming-soon.html"><span class="sticker"
+                            style="top:-14px;right:18px;z-index:2" data-m="c3g"></span>
+                        <div class="proj-b">
+                            <div>
+                                <p class="mono ac mb-1">03</p>
+                                <h3 class="fs-2 mb-1" data-m="c3t"></h3>
+                                <p class="mb-0" data-m="c3d"></p>
+                            </div>
+                            <div class="d-flex align-items-center gap-3"><span
+                                    class="ld"><span></span><span></span><span></span></span><span class="btn-b"
+                                    data-m="c3c"></span></div>
+                        </div>
+                    </a></div>
             </div>
         </section>
     </main>
@@ -82,13 +86,15 @@
         <div class="container d-flex flex-wrap justify-content-between gap-2">
             <span class="mono" data-i18n="f_t">Built by hand.</span>
             <span class="mono">&copy;
-                <script>document.write(new Date().getFullYear())</script> Febri &middot; <a
-                    href="https://github.com/USERNAME">GitHub</a>
+                <script>document.write(new Date().getFullYear())</script> Febri Zuladhari Bangun &middot; <a
+                    href="https://github.com/febrizuladhari">GitHub</a> &middot; <a
+                    href="https://www.linkedin.com/in/febrizuladhari/">LinkedIn</a>
             </span>
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/pages.js"></script>
 </body>
 
 </html>
