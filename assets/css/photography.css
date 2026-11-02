@@ -1,0 +1,32 @@
+.ph-col{position:relative;aspect-ratio:1/1;max-width:460px;margin:auto}
+.ph-col button{position:absolute;border:3px solid var(--ink);background:var(--paper);padding:8px;box-shadow:var(--sh);cursor:zoom-in;transition:.3s}
+.ph-col img{display:block;width:100%;height:auto}
+.ph-col .c1{width:56%;top:0;left:0;transform:rotate(-6deg)}.ph-col .c2{width:42%;right:0;top:12%;transform:rotate(5deg);z-index:2}.ph-col .c3{width:50%;bottom:0;left:24%;transform:rotate(-2deg);z-index:3}
+.ph-col button:hover{transform:rotate(0) scale(1.06);z-index:5}
+.darkroom{background:#0f0e0d;color:var(--paper);border-block:3px solid var(--ink);padding:3rem 0 4rem;background-image:radial-gradient(rgba(244,239,230,.07) 1px,transparent 1px);background-size:22px 22px}
+.pchip{border:3px solid var(--paper);background:transparent;color:var(--paper);font:500 .8rem 'DM Mono',monospace;text-transform:uppercase;padding:.35rem .9rem;box-shadow:3px 3px 0 var(--paper);transition:.12s}
+.pchip:hover{transform:translate(2px,2px);box-shadow:1px 1px 0 var(--paper)}.pchip.on{background:var(--hl);color:var(--ink)}
+.wall{columns:3 300px;column-gap:1.6rem}
+.print{display:block;width:100%;break-inside:avoid;margin:0 0 1.6rem;padding:8px;background:var(--paper);border:0;position:relative;cursor:zoom-in;transition:transform .25s,box-shadow .25s;overflow:visible}
+.print:hover,.print:focus-visible{transform:translateY(-6px) rotate(-.6deg);box-shadow:8px 10px 0 var(--accent);outline:0;z-index:2}
+.print img{display:block;width:100%;height:auto;background:var(--bg,#222)}
+.print .no{position:absolute;top:-10px;left:-8px;z-index:3;background:var(--accent);color:#fff;border:2px solid var(--ink);font:500 .7rem 'DM Mono',monospace;padding:0 .4rem}
+.print .cap{position:absolute;left:8px;right:8px;bottom:8px;padding:2.2rem .9rem .7rem;background:linear-gradient(transparent,rgba(15,14,13,.92));color:var(--paper);text-align:left;transform:translateY(30%);opacity:0;transition:.25s}
+.print:hover .cap,.print:focus-visible .cap{transform:none;opacity:1}
+.cap b{display:block;font-size:1.05rem;line-height:1.2}.cap .mono{opacity:.8;font-size:.7rem}
+@media(hover:none){.print .cap{transform:none;opacity:1}}
+.strip{columns:auto;display:flex;gap:1.4rem;overflow-x:auto;scroll-snap-type:x mandatory;padding:2.4rem 1.5rem;background-color:#080706;background-image:linear-gradient(90deg,var(--paper) 14px,transparent 14px),linear-gradient(90deg,var(--paper) 14px,transparent 14px);background-size:34px 12px;background-repeat:repeat-x;background-position:0 10px,0 calc(100% - 10px);background-attachment:local}
+.strip .print{width:auto;flex:0 0 auto;height:min(66vh,520px);margin:0;scroll-snap-align:center;padding:6px}
+.strip .print img{height:100%;width:auto}
+.lbx{position:fixed;inset:0;z-index:3000;background:#050505;display:none;overflow:auto}
+.lbx.show{display:grid;grid-template-columns:minmax(0,1fr) 340px}
+.lbx:before{content:"";position:fixed;inset:0;background:radial-gradient(circle at 35% 45%,var(--tint,#222),transparent 70%);opacity:.55;pointer-events:none}
+.lbx-st{position:relative;display:grid;place-items:center;padding:1.2rem;min-height:100vh}
+.lbx-st img{max-width:100%;max-height:calc(100vh - 2.4rem);object-fit:contain;border:3px solid var(--paper);box-shadow:10px 10px 0 rgba(0,0,0,.5)}
+.lbx-i{position:relative;padding:2rem 1.5rem;border-left:3px solid var(--paper);background:rgba(8,7,6,.7);color:var(--paper);display:flex;flex-direction:column;gap:.8rem;justify-content:flex-end}
+.lbx-i h3{font-size:2rem;margin:0}.lbx-x,.lbx-b{position:absolute;z-index:5;width:48px;height:48px;border:3px solid var(--paper);background:var(--ink);color:var(--paper);font:700 1.5rem/1 'DM Mono',monospace;cursor:pointer;transition:.12s}
+.lbx-x{top:1rem;right:1rem}.lbx-p{left:1rem;top:50%}.lbx-n{right:1rem;top:50%}
+.lbx-x:hover,.lbx-b:hover{background:var(--accent)}
+.exif{border:2px solid var(--hl);color:var(--hl);padding:.5rem .7rem;font-size:.72rem;line-height:1.6}
+@media(max-width:900px){.lbx.show{grid-template-columns:1fr}.lbx-st{min-height:0;padding:3.6rem .8rem 1rem}.lbx-st img{max-height:62vh}.lbx-i{border-left:0;border-top:3px solid var(--paper)}.lbx-p,.lbx-n{top:30%}}
+@media(prefers-reduced-motion:reduce){.print,.ph-col button{transition:none}}
