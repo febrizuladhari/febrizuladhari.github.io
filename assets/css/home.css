@@ -1,0 +1,31 @@
+.hero-photo {
+  position: relative;
+  max-width: 380px;
+  background: #fff;
+  border: 3px solid var(--ink);
+  box-shadow: var(--sh);
+  padding: 10px 10px 46px;
+  transform: rotate(2deg);
+  transition: 0.3s;
+}
+.hero-photo:hover {
+  transform: rotate(0) scale(1.02);
+}
+.hero-photo img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4/5;
+  object-fit: cover;
+  display: block;
+  border: 3px solid var(--ink);
+}
+.hero-photo .cap {
+  position: absolute;
+  left: 14px;
+  bottom: 12px;
+}
+.sticker.alt {
+  background: var(--hl);
+  color: var(--ink);
+  transform: rotate(-6deg);
+}

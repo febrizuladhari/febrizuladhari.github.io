@@ -5,7 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Home | Febri</title>
-    <meta name="description" content="Personal website and portfolio of Febri.">
+    <meta name="description"
+        content="Febri Zuladhari Bangun: Information Technology graduate, data and web developer, and photography lover.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -13,6 +14,8 @@
         rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/portfolio.css" rel="stylesheet">
+    <link href="assets/css/home.css" rel="stylesheet">
 </head>
 
 <body>
@@ -35,26 +38,65 @@
         </div>
     </nav>
     <main>
-        <section class="container py-5 my-md-4">
+        <section class="container py-5 my-md-3">
             <div class="row align-items-center g-5">
-                <div class="col-lg-8 rv">
+                <div class="col-lg-7 rv">
                     <p class="mono mb-3" data-i18n="h_k">Hello, I'm</p>
-                    <h1 class="big mb-4" data-i18n="h_t">I build for the web.</h1>
-                    <p class="fs-5 mb-4" style="max-width:36rem" data-i18n="h_s"></p>
+                    <h1 class="big mb-4" style="font-size:clamp(2.4rem,7.2vw,5.4rem)" data-i18n="h_t">I build for the
+                        web, make data talk &amp; love photography.</h1>
+                    <p class="fs-5 mb-4" style="max-width:37rem" data-i18n="h_s"></p>
                     <a href="portfolio.html" class="btn-b me-2 mb-2" data-i18n="h_c1">See my work</a><a
                         href="contact.html" class="btn-b alt mb-2" data-i18n="h_c2">Say hello</a>
                 </div>
-                <div class="col-lg-4 rv">
-                    <div class="portrait mx-auto" style="max-width:320px">F<span class="sticker"
-                            style="top:-14px;right:-18px" data-i18n="h_st">Open</span></div>
+                <div class="col-lg-5 rv">
+                    <div class="hero-photo mx-auto"><img src="assets/img/febri-portrait.webp" width="900" height="1125"
+                            alt="Portrait of Febri Zuladhari Bangun by a lake"><span class="cap mono">Febri Zuladhari
+                            Bangun</span>
+                        <span class="sticker" style="top:-14px;right:10px" data-i18n="h_st">Open to collab</span><span
+                            class="sticker alt" style="bottom:58px;left:10px" data-i18n="h_st2">Loves photography</span>
+                    </div>
                 </div>
             </div>
         </section>
         <div class="marquee">
             <div>Python<span>✶</span>SQL<span>✶</span>Data
-                Analytics<span>✶</span>Laravel<span>✶</span>Figma<span>✶</span>Git<span>✶</span>Python<span>✶</span>SQL<span>✶</span>Data
-                Analytics<span>✶</span>Laravel<span>✶</span>Figma<span>✶</span>Git<span>✶</span></div>
+                Analytics<span>✶</span>NusaBERT<span>✶</span>Laravel<span>✶</span>Photography<span>✶</span>Figma<span>✶</span>Git<span>✶</span>Python<span>✶</span>SQL<span>✶</span>Data
+                Analytics<span>✶</span>NusaBERT<span>✶</span>Laravel<span>✶</span>Photography<span>✶</span>Figma<span>✶</span>Git<span>✶</span>
+            </div>
         </div>
+        <section class="container py-5">
+            <h2 class="sec mb-4 rv" data-m="hm_fw"></h2>
+            <div class="row g-4">
+                <div class="col-lg-6 rv"><a class="proj" href="work-dinsos.html"><span class="sticker"
+                            style="top:-14px;right:18px;z-index:2" data-m="c1g"></span>
+                        <div class="proj-img"><img src="assets/img/dashboard.webp" alt="SIMBA dashboard" loading="lazy">
+                        </div>
+                        <div class="proj-b">
+                            <p class="mono ac mb-0">01</p>
+                            <h3 class="fs-2 mb-0" data-m="c1t"></h3>
+                            <p class="mb-0" data-m="c1d"></p>
+                            <div class="proj-s"><span data-m="c1a"></span><span data-m="c1b"></span><span
+                                    data-m="c1c"></span></div>
+                            <p class="proj-cta mb-0"><span data-m="cta"></span> <span>→</span></p>
+                        </div>
+                    </a></div>
+                <div class="col-lg-6 rv"><a class="proj" href="work-skripsi.html"><span class="sticker"
+                            style="top:-14px;right:18px;z-index:2" data-m="c2g"></span>
+                        <div class="proj-img"><img src="assets/img/skripsi-chat.webp" alt="Bunda Chatbot chat page"
+                                loading="lazy"></div>
+                        <div class="proj-b">
+                            <p class="mono ac mb-0">02</p>
+                            <h3 class="fs-2 mb-0" data-m="c2t"></h3>
+                            <p class="mb-0" data-m="c2d"></p>
+                            <div class="proj-s"><span data-m="c2a"></span><span data-m="c2b"></span><span
+                                    data-m="c2c"></span></div>
+                            <p class="proj-cta mb-0"><span data-m="cta"></span> <span>→</span></p>
+                        </div>
+                    </a></div>
+            </div>
+            <p class="mt-4 mb-4"><a class="mono" href="portfolio.html" data-m="hm_all"></a></p>
+            <div class="blob rv"><strong data-m="hm_now"></strong> — <span data-m="hm_nd"></span></div>
+        </section>
         <section class="container py-5">
             <h2 class="sec mb-4 rv" data-i18n="i_h">Explore</h2>
             <div class="row g-4">
@@ -82,13 +124,14 @@
             <span class="mono" data-i18n="f_t">Built by hand.</span>
             <span class="mono">&copy;
                 <script>document.write(new Date().getFullYear())</script> Febri Zuladhari Bangun &middot; <a
-                    href="https://github.com/febrizuladhari">GitHub</a> &middot; <a
+                    href="https://github.com/USERNAME">GitHub</a> &middot; <a
                     href="https://www.linkedin.com/in/febrizuladhari/">LinkedIn</a>
             </span>
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/pages.js"></script>
 </body>
 
 </html>
